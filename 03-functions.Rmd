@@ -19,8 +19,12 @@ permutation()
 If a function definition runs over multiple lines, indent the second line to 
 where the definition starts.
 
+```
+使用下面Good方式
+```
+
 ```{r, eval = FALSE}
-# Good
+# Good 
 long_function_name <- function(a = "a long argument",
                                b = "another argument",
                                c = "another long argument") {
@@ -60,7 +64,9 @@ If your function is called primarily for its side-effects (like printing,
 plotting, or saving to disk), it should return the first argument invisibly. 
 This makes it possible to use the function as part of a pipe. `print` methods 
 should usually do this, like this example from httr:
-
+```
+好技巧！
+```
 ```{r eval = FALSE}
 print.url <- function(x, ...) {
   cat("Url: ", build_url(x), "\n", sep = "")
@@ -70,12 +76,19 @@ print.url <- function(x, ...) {
 
 ## Comments
 
+```
+使用注释来解释为什么要这样写，而不是描述这是什么或怎么做的！
+```
 In code, use comments to explain the "why" not the "what" or "how". Each line 
 of a comment should begin with the comment symbol and a single space: `# `.
 
 ## Design
 
 There are two main design principles to bear in mind:
+
+```
+一个函数应该做好一件事！一般20-30行。
+```
 
 *   A function should do one thing well. 
  
@@ -84,6 +97,10 @@ There are two main design principles to bear in mind:
     a function on one screen. 20-30 lines per function are common. For 
     functions that are significantly longer, consider splitting it into smaller 
     functions.
+
+```
+一个函数应该容易在隔离的情况下被理解，避免与外部耦合。
+```
 
 *   A function should be easily understandable in isolation.
 

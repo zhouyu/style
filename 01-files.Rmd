@@ -2,6 +2,10 @@
 
 ## Names
 
+```
+文件名应该用有意义的名字，以`.R`结尾。
+```
+
 File names should be meaningful and end in `.R`. Avoid using special characters 
 in file names - stick with numbers, letters, `-`, and `_`.
 

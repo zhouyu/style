@@ -1,11 +1,17 @@
 # Syntax
 
 ## Object names
+```
++ 变量名和函数名应该仅仅使用小写字母、数字和下划线`_`
++ 使用下划线分开不同的words，通常不要使用`.`
++ 变量名用名词，而函数名以动词起始
++ 尽量避免使用R自带变量和函数，如T(TRUE), c(vector), mean等
+```
 
-> "There are only two hard things in Computer Science: cache invalidation and 
-> naming things." 
->
-> --- Phil Karlton
+<!-- > "There are only two hard things in Computer Science: cache invalidation and  -->
+<!-- > naming things."  -->
+<!-- > -->
+<!-- > --- Phil Karlton -->
 
 Variable and function names should use only lowercase letters, numbers, and `_`. 
 

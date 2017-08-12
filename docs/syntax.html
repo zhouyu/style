@@ -6,8 +6,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>The tidyverse style guide</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta name="description" content="The tidyverse style guide">
-  <meta name="generator" content="bookdown 0.4 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.0.71 and GitBook 2.6.7">
 
   <meta property="og:title" content="The tidyverse style guide" />
   <meta property="og:type" content="book" />
@@ -33,6 +34,7 @@
   
 <link rel="prev" href="files.html">
 <link rel="next" href="functions.html">
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -92,7 +94,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <body>
 
 
-
   <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
 
     <div class="book-summary">
@@ -103,10 +104,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
-<li class="chapter" data-level="1" data-path="files.html"><a href="files.html"><i class="fa fa-check"></i><b>1</b> Files</a><ul>
-<li class="chapter" data-level="1.1" data-path="files.html"><a href="files.html#names"><i class="fa fa-check"></i><b>1.1</b> Names</a></li>
-<li class="chapter" data-level="1.2" data-path="files.html"><a href="files.html#structure"><i class="fa fa-check"></i><b>1.2</b> Structure</a></li>
-</ul></li>
+<li class="chapter" data-level="1" data-path="files.html"><a href="files.html"><i class="fa fa-check"></i><b>1</b> Files</a></li>
 <li class="chapter" data-level="2" data-path="syntax.html"><a href="syntax.html"><i class="fa fa-check"></i><b>2</b> Syntax</a><ul>
 <li class="chapter" data-level="2.1" data-path="syntax.html"><a href="syntax.html#object-names"><i class="fa fa-check"></i><b>2.1</b> Object names</a></li>
 <li class="chapter" data-level="2.2" data-path="syntax.html"><a href="syntax.html#spacing"><i class="fa fa-check"></i><b>2.2</b> Spacing</a></li>
@@ -117,32 +115,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="2.7" data-path="syntax.html"><a href="syntax.html#semicolons"><i class="fa fa-check"></i><b>2.7</b> Semicolons</a></li>
 <li class="chapter" data-level="2.8" data-path="syntax.html"><a href="syntax.html#quotes"><i class="fa fa-check"></i><b>2.8</b> Quotes</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="functions.html"><a href="functions.html"><i class="fa fa-check"></i><b>3</b> Functions</a><ul>
-<li class="chapter" data-level="3.1" data-path="functions.html"><a href="functions.html#naming"><i class="fa fa-check"></i><b>3.1</b> Naming</a></li>
-<li class="chapter" data-level="3.2" data-path="functions.html"><a href="functions.html#long-lines-1"><i class="fa fa-check"></i><b>3.2</b> Long lines</a></li>
-<li class="chapter" data-level="3.3" data-path="functions.html"><a href="functions.html#return"><i class="fa fa-check"></i><b>3.3</b> <code>return()</code></a></li>
-<li class="chapter" data-level="3.4" data-path="functions.html"><a href="functions.html#comments"><i class="fa fa-check"></i><b>3.4</b> Comments</a></li>
-<li class="chapter" data-level="3.5" data-path="functions.html"><a href="functions.html#design"><i class="fa fa-check"></i><b>3.5</b> Design</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="pipes.html"><a href="pipes.html"><i class="fa fa-check"></i><b>4</b> Pipes</a><ul>
-<li class="chapter" data-level="4.1" data-path="pipes.html"><a href="pipes.html#introduction"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
-<li class="chapter" data-level="4.2" data-path="pipes.html"><a href="pipes.html#spacing-and-indenting"><i class="fa fa-check"></i><b>4.2</b> Spacing and indenting</a></li>
-<li class="chapter" data-level="4.3" data-path="pipes.html"><a href="pipes.html#no-arguments"><i class="fa fa-check"></i><b>4.3</b> No arguments</a></li>
-<li class="chapter" data-level="4.4" data-path="pipes.html"><a href="pipes.html#long-lines-2"><i class="fa fa-check"></i><b>4.4</b> Long lines</a></li>
-<li class="chapter" data-level="4.5" data-path="pipes.html"><a href="pipes.html#assignment-1"><i class="fa fa-check"></i><b>4.5</b> Assignment</a></li>
-<li class="chapter" data-level="4.6" data-path="pipes.html"><a href="pipes.html#comments-1"><i class="fa fa-check"></i><b>4.6</b> Comments</a></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="code-documentation.html"><a href="code-documentation.html"><i class="fa fa-check"></i><b>5</b> Code Documentation</a><ul>
-<li class="chapter" data-level="5.1" data-path="code-documentation.html"><a href="code-documentation.html#introduction-1"><i class="fa fa-check"></i><b>5.1</b> Introduction</a></li>
-<li class="chapter" data-level="5.2" data-path="code-documentation.html"><a href="code-documentation.html#title-and-description"><i class="fa fa-check"></i><b>5.2</b> Title and Description</a></li>
-<li class="chapter" data-level="5.3" data-path="code-documentation.html"><a href="code-documentation.html#indention"><i class="fa fa-check"></i><b>5.3</b> Indention</a></li>
-<li class="chapter" data-level="5.4" data-path="code-documentation.html"><a href="code-documentation.html#documenting-parameters"><i class="fa fa-check"></i><b>5.4</b> Documenting Parameters</a></li>
-<li class="chapter" data-level="5.5" data-path="code-documentation.html"><a href="code-documentation.html#capitalization-and-full-stops"><i class="fa fa-check"></i><b>5.5</b> Capitalization and Full Stops</a></li>
-<li class="chapter" data-level="5.6" data-path="code-documentation.html"><a href="code-documentation.html#reference"><i class="fa fa-check"></i><b>5.6</b> Reference</a></li>
-<li class="chapter" data-level="5.7" data-path="code-documentation.html"><a href="code-documentation.html#line-break"><i class="fa fa-check"></i><b>5.7</b> Line Break</a></li>
-<li class="chapter" data-level="5.8" data-path="code-documentation.html"><a href="code-documentation.html#code-font"><i class="fa fa-check"></i><b>5.8</b> <code>Code Font</code></a></li>
-<li class="chapter" data-level="5.9" data-path="code-documentation.html"><a href="code-documentation.html#internal-functions"><i class="fa fa-check"></i><b>5.9</b> Internal Functions</a></li>
-</ul></li>
+<li class="chapter" data-level="3" data-path="functions.html"><a href="functions.html"><i class="fa fa-check"></i><b>3</b> Functions</a></li>
+<li class="chapter" data-level="4" data-path="pipes.html"><a href="pipes.html"><i class="fa fa-check"></i><b>4</b> Pipes</a></li>
+<li class="chapter" data-level="5" data-path="code-documentation.html"><a href="code-documentation.html"><i class="fa fa-check"></i><b>5</b> Code Documentation</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -167,10 +142,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h1><span class="header-section-number">2</span> Syntax</h1>
 <div id="object-names" class="section level2">
 <h2><span class="header-section-number">2.1</span> Object names</h2>
-<blockquote>
-<p>“There are only two hard things in Computer Science: cache invalidation and naming things.”</p>
-<p>— Phil Karlton</p>
-</blockquote>
+<pre><code>+ 变量名和函数名应该仅仅使用小写字母、数字和下划线`_`
++ 使用下划线分开不同的words，通常不要使用`.`
++ 变量名用名词，而函数名以动词起始
++ 尽量避免使用R自带变量和函数，如T(TRUE), c(vector), mean等</code></pre>
+<!-- > "There are only two hard things in Computer Science: cache invalidation and  -->
+<!-- > naming things."  -->
+<!-- > -->
+<!-- > --- Phil Karlton -->
 <p>Variable and function names should use only lowercase letters, numbers, and <code>_</code>.</p>
 <p>Use underscores (<code>_</code>) to separate words within a name. Base R uses dots in function names (<code>contrib.url()</code>) and class names (<code>data.frame</code>), but it’s better to reserve dots exclusively for the S3 object system. In S3, methods are given the name <code>function.class</code>; if you also use <code>.</code> in function and class names you end up with confusing methods like <code>as.data.frame.data.frame()</code>.</p>
 <p>Generally, variable names should be nouns and function names should be verbs. Strive for names that are concise and meaningful (this is not easy!).</p>
@@ -342,9 +321,8 @@ x =<span class="st"> </span><span class="dv">5</span></code></pre></div>
         </div>
       </div>
 <a href="files.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="functions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
-    </div>
-  </div>
+<a href="functions.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
@@ -361,10 +339,7 @@ gitbook.start({
 "family": "sans",
 "size": 2
 },
-"edit": {
-"link": "https://github.com/tidyverse/style/edit/master/02-syntax.Rmd",
-"text": "Edit"
-},
+"edit": "https://github.com/tidyverse/style/edit/master/%s",
 "download": null,
 "toc": {
 "collapse": "subsection"
